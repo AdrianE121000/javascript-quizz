@@ -8,7 +8,7 @@ import {
   ListItemButton,
   ListItemText,
 } from '@mui/material';
-import { useQuestionsStore } from './store/questions';
+import { useQuestionsStore } from '../store/questions';
 import SyntaxHighlighter from 'react-syntax-highlighter';
 import { gradientDark } from 'react-syntax-highlighter/dist/esm/styles/hljs';
 import { ArrowBackIosNew } from '@mui/icons-material';
