@@ -10,7 +10,9 @@ export const useQuestionsStore = create(
         currentQuestion: 0,
 
         fetchQuestions: async (limit) => {
-          const res = await fetch('http://localhost:5173/data.json');
+          const res = await fetch(
+            'https://adriane121000.github.io/javascript-quizz/data.json'
+          );
           const json = await res.json();
 
           const questions = json
