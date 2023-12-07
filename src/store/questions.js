@@ -8,10 +8,12 @@ export const useQuestionsStore = create(
       return {
         questions: [],
         currentQuestion: 0,
+        language: '',
 
         fetchQuestions: async (limit) => {
+          const { language } = get();
           const res = await fetch(
-            'https://adriane121000.github.io/javascript-quizz/data.json'
+            `https://adriane121000.github.io/javascript-quizz/${language}.json`
           );
           const json = await res.json();
 
@@ -66,6 +68,10 @@ export const useQuestionsStore = create(
 
         reset: () => {
           set({ currentQuestion: 0, questions: [] });
+        },
+
+        selectLanguage: (language) => {
+          set({ language: language });
         },
       };
     },
