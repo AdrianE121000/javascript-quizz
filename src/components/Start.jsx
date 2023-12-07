@@ -1,4 +1,4 @@
-import { Button } from '@mui/material';
+import { Box, Button } from '@mui/material';
 import { useQuestionsStore } from '../store/questions';
 
 export function Start() {
@@ -11,16 +11,18 @@ export function Start() {
   };
   return (
     <>
-      <Button
-        onClick={handleClick}
-        variant='contained'>
-        DATA
-      </Button>
-      <Button
-        onClick={handleClick}
-        variant='contained'>
-        Python
-      </Button>
+      <Box sx={{ display: 'flex', gap: 2 }}>
+        <Button
+          onClick={handleClick}
+          variant='contained'>
+          JavaScript
+        </Button>
+        <Button
+          onClick={handleClick}
+          variant='contained'>
+          Python
+        </Button>
+      </Box>
     </>
   );
 }
