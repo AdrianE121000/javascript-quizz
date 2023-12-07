@@ -9,16 +9,16 @@
   {
     "id": 2,
     "question": "¿Qué imprime el siguiente código?",
-    "code": "\n\nnumbers = [1, 2, 3, 4]\nprint(numbers[::2])",
+    "code": "numbers = [1, 2, 3, 4]\nprint(numbers[::2])",
     "answers": ["[1, 3]", "[1, 2]", "[2, 4]", "[1, 2, 3, 4]"],
     "correctAnswer": 0
   },
   {
     "id": 3,
     "question": "¿Cuál es el resultado de la expresión en Python?",
-    "code": "'3 + 5 * 2'",
+    "code": "3 + 5 * 2",
     "answers": ["16", "26", "13", "23"],
-    "correctAnswer": 1
+    "correctAnswer": 2
   },
   {
     "id": 4,
@@ -63,7 +63,7 @@
   {
     "id": 9,
     "question": "¿Qué hace el siguiente código?",
-    "code": "\n\nnumbers = [1, 2, 3, 4]\nnew_numbers = [x * 2 for x in numbers]\nprint(new_numbers)",
+    "code": "numbers = [1, 2, 3, 4]\nnew_numbers = [x * 2 for x in numbers]\nprint(new_numbers)",
     "answers": [
       "[2, 4, 6, 8]",
       "[1, 2, 3, 4]",
@@ -134,7 +134,7 @@
   {
     "id": 17,
     "question": "¿Qué hace el siguiente código?",
-    "code": "\n\nx = lambda a, b: a * b\nprint(x(3, 4))",
+    "code": "x = lambda a, b: a * b\nprint(x(3, 4))",
     "answers": [
       "Define una función llamada x",
       "Crea una lista con elementos a y b",
@@ -153,7 +153,7 @@
   {
     "id": 19,
     "question": "¿Qué imprime el siguiente código?",
-    "code": "\n\nfor i in range(3):\n  print(i, end=' ')",
+    "code": "for i in range(3):\n  print(i, end=' ')",
     "answers": ["0 1 2", "0 1 2 3", "1 2 3", "0 2 4"],
     "correctAnswer": 0
   },
@@ -173,8 +173,8 @@
   },
   {
     "id": 22,
-    "question": "¿Qué hace el método 'count()' en una lista de Python?",
-    "code": "",
+    "question": "¿Qué hace el método en una lista de Python?",
+    "code": "count()",
     "answers": [
       "Devuelve el número total de elementos en la lista",
       "Cuenta el número de ocurrencias de un elemento en la lista",
@@ -224,14 +224,14 @@
   {
     "id": 27,
     "question": "¿Cuál es el resultado de este código?",
-    "code": "\n\na = [1, 2, 3]\nb = a\nb[0] = 5\nprint(a[0])",
+    "code": "a = [1, 2, 3]\nb = a\nb[0] = 5\nprint(a[0])",
     "answers": ["1", "5", "2", "Error"],
     "correctAnswer": 1
   },
   {
     "id": 28,
     "question": "¿Qué imprime el siguiente código?",
-    "code": "\n\nprint(*range(5))",
+    "code": "print(*range(5))",
     "answers": ["01234", "(0, 1, 2, 3, 4)", "[0, 1, 2, 3, 4]", "Error"],
     "correctAnswer": 0
   },
@@ -259,7 +259,7 @@
   {
     "id": 32,
     "question": "¿Cuál es la salida de este código?",
-    "code": "\n\nx = [1, 2, 3]\ny = x\ny[0] = 0\nprint(x)",
+    "code": "x = [1, 2, 3]\ny = x\ny[0] = 0\nprint(x)",
     "answers": ["[1, 2, 3]", "[0, 2, 3]", "[0, 2, 3]", "[1, 0, 3]"],
     "correctAnswer": 1
   },

@@ -8,7 +8,7 @@ import {
   ListItemButton,
   ListItemText,
 } from '@mui/material';
-import { useQuestionsStore } from './store/questions';
+import { useQuestionsStore } from '../store/questions';
 import SyntaxHighlighter from 'react-syntax-highlighter';
 import { gradientDark } from 'react-syntax-highlighter/dist/esm/styles/hljs';
 import { ArrowBackIosNew } from '@mui/icons-material';
@@ -33,6 +33,7 @@ const getBackgroundColor = (info, index) => {
 const Questions = ({ info }) => {
   const selectAnswer = useQuestionsStore((state) => state.selectAnswer);
   const goNextQuestion = useQuestionsStore((state) => state.goNextQuestion);
+  const language = useQuestionsStore((state) => state.language);
 
   const createHandleClick = (answerIndex) => () => {
     selectAnswer(info.id, answerIndex);
@@ -47,7 +48,7 @@ const Questions = ({ info }) => {
       sx={{ bgcolor: '#222', p: 2, textAlign: 'left', marginTop: 4 }}>
       <Typography variant='h5'>{info.question}</Typography>
       <SyntaxHighlighter
-        language='javascript'
+        language={language}
         style={gradientDark}>
         {info.code}
       </SyntaxHighlighter>

@@ -1,13 +1,11 @@
 import { Container, Stack, Typography } from '@mui/material';
-import { JavaScriptLogo } from './JavaScriptLogo';
 import './App.css';
-import { Start } from './Start';
+import { Start } from './components/Start';
 import { useQuestionsStore } from './store/questions';
-import { Game } from './Game';
+import { Game } from './components/Game';
 
 function App() {
   const questions = useQuestionsStore((state) => state.questions);
-  const currentQuestion = useQuestionsStore((state) => state.currentQuestion);
 
   return (
     <>
@@ -18,11 +16,10 @@ function App() {
             gap={2}
             alignItems='center'
             justifyContent='center'>
-            <JavaScriptLogo />
             <Typography
               variant='h2'
               component='h1'>
-              JavaScript Quizz
+              Quizz App
             </Typography>
           </Stack>
 
