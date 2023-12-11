@@ -11,7 +11,7 @@ export function Start() {
   };
   return (
     <>
-      <Box sx={{ display: 'flex', gap: 2 }}>
+      <Box sx={{ display: 'flex', gap: 2, marginTop: '15px' }}>
         <Button
           onClick={handleClick}
           variant='contained'>
